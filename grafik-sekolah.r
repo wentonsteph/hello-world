@@ -100,9 +100,14 @@ finalplot <-  ggplot(df_idn, aes(x = Year, y = count, fill = lab)) +
         #legend.text=element_text(family = "Calibri", size=14, hjust = 0),
         axis.text=element_text(face = "bold", size=14))
 
-finalplot
+# comment beloow finalplot chart so i can see changes and this isn't a final plot tho 
+#finalplot
+
+# Just wanna add a comment here to see some change
 
 logo <- image_read("~/tidytuesday/ourworldindata/water access/weightaverage.png") #pake library(magick)
+
+# And here too
 finalplot
 grid::grid.raster(logo, x = 0.97, y = 0.99, just = c('right', 'top'), width = unit(1, 'inches')) #setting lokasi logo
 
